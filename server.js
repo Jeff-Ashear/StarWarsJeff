@@ -47,6 +47,10 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "new.html"));
+});
+
 app.get("/add", function(req, res) {
   res.sendFile(path.join(__dirname, "add.html"));
 });
